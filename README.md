@@ -1,2 +1,2 @@
-# JavaScript
-Study JavaScript
+# JavaWeb
+Study JavaWeb
