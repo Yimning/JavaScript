@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            事件
+        </title>
+        <style>
+            .box{
+                width: 100px;
+                height: 100px;
+                background: rgb(14, 199, 255);
+                text-align: center;
+                line-height: 100px;
+                color: coral;
+            }
+        </style>
+    </head>
+
+    <body>
+        
+        <!-- 给元素添加click事件 -->
+        <button  onclick="createDiv()"> 点击添加元素 </button>
+
+        <script>
+
+            function createDiv(){
+
+                var div = document.createElement("div")
+                div.innerText = "开课吧"
+
+                div.setAttribute("class","box")
+
+                // 把div元素添加到body元素
+                document.body.appendChild(div)
+
+            }
+        </script>
+    </body>
+</html>
