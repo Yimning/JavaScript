@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            flex布局
+        </title>
+
+        <style>
+            .container{
+                /*外层的父元素使用flex布局*/
+                display: flex; 
+                width: 200px;
+            }
+            .container .box{
+                flex: 1;
+            }
+            .red{
+                /* flex: 1; */
+                background: red;
+            }
+            .green{
+                /* flex:2; */
+                background: green;
+            }
+        </style>        
+    </head>
+
+    <body>
+        
+        <div class="container">
+            <div class="box red"> box 1 </div>
+            <div class="box green"> box 2 </div>
+        </div>
+    </body>
+</html>
