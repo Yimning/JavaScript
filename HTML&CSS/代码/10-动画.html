@@ -1,0 +1,50 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-10-17 17:30:34
+ * @LastEditTime: 2021-02-21 21:09:24
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \JavaWeb\HTML&CSS\代码\10-动画.html
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>css 动画</title>
+
+        <style>
+            .box{
+                width: 100px;
+                height: 50px;
+                background: hotpink;
+                text-align: center; /*设置文本居中显示*/
+                line-height: 50px; /*设置行高和元素高度一致，可以使内部文本垂居中*/
+                /* 使用关键帧动画 */
+                /*  animation:  关键帧动画名称  动画执行时间 动画效果函数 infinite动画执行次数 infinite为循环无限 */
+                animation: l-2-r  1s  linear  infinite;
+            }
+
+
+            /* css3 关键帧动画 */
+            @keyframes l-2-r {
+                /* from动画起始的状态 */
+                0%{
+                    /* transform 变换，位移变换 */
+                    transform: translateX(0px);
+                }
+
+                50%{
+                    transform: translateX(500px);
+                }
+                /* to动画结束的状态 */
+                100%{
+                    transform: translateX(0px);
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        
+        <div class="box"> 开课吧 </div>
+    </body>
+</html>
